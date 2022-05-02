@@ -16,6 +16,13 @@
             <div id="flush_success">
                 <c:out value="${flush}"></c:out>
             </div>
+            <script>
+            const target = document.getElementById('flush_success');
+
+            target.addEventListener('click', () => {
+                target.style.display = "none";
+            }, false);
+            </script>
         </c:if>
         <h2>ログイン</h2>
         <form method="POST"

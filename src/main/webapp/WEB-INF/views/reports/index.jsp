@@ -17,6 +17,13 @@
             <div id="flush_success">
                 <c:out value="${flush}"></c:out>
             </div>
+            <script>
+            const target = document.getElementById('flush_success');
+
+            target.addEventListener('click', () => {
+                target.style.display = "none";
+            }, false);
+            </script>
         </c:if>
         <h2>日報 一覧</h2>
         <table id="report_list">
